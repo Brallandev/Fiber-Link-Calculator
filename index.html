@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculadora con Javascript</title>
+        <link rel="stylesheet" href="style.css">
+        <script text="text/javascript"; src="Valores.js"> </script>
+    </head>
+    <body>
+
+        <div class="box" action="" id="form">
+
+            <div class="Inner_Box">
+
+                <h1>Calculadora de Conversiones</h1>
+
+                <input type="number" id="Entrada">
+
+                
+                <form name="tabla">
+
+                    <select name="identidad" id="identidad" onchange="BrallanesunrealG();">
+                    
+                        <option>Seleccione</option>
+                        <option value="1"> Potencia </option>
+                        <option value="2"> Voltaje </option>
+                    
+                    </select><br><br>
+
+                    <select name="operaciones" id="operaciones" disabled="" onchange="Formula(); Imagenes();">
+                        
+                        <option>Potencia</option>
+                        <option value="1" > dB a #veces </option>
+                        <option value="2"> #veces a dB </option>
+                        <option value="3"> dBm a Watts</option>
+                        <option value="4"> Watts a dBm</option>
+                        <option value="5"> dBw a Watts</option>
+                        <option value="6"> Watts a dBw</option>
+                        
+                    </select>
+
+                    <select name="operaciones2" id="operaciones2" disabled="" onchange="Formula2(); Imagenes2();">
+                        
+                        <option value="0">Voltaje</option>
+                        <option value="1" > dB a #veces </option>
+                        <option value="2"> #veces a dB </option>
+                        <option value="3"> dBmV a Voltios</option>
+                        <option value="4"> Voltios a dBmV</option>
+                        <option value="5"> dBuV a Voltios</option>
+                        <option value="6"> Voltios a dBuV</option>
+                        
+                    </select>
+
+                    <button type="button" onclick="getData(); Resultadoo();">Convert</button><br>
+
+                    <input type="number" id="resultado"><br>
+
+                    <img id="foto">
+
+                </form>
+                
+            </div>
+        </div>
+
+    </body>
+</html>
