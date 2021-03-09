@@ -42,7 +42,7 @@ var Xvalor = function(){
         }
         else if (Onda == 1550){
             console.log(Valor_de_x)
-            var prueba = (0.05)*Valor_de_x-1;
+            var prueba = (0.05)*(Valor_de_x-1);
         }
     }
 

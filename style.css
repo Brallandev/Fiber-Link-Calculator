@@ -671,3 +671,42 @@ body{
 .Fibraoptica button:hover[id="conversion"]{
     background: #bd994d;
 }
+
+.Fibraoptica select{
+    padding: 8px 12px;
+    color: aliceblue;
+    justify-content: center;
+    background: none;
+    border: 2px solid #2ecc71;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 5px 25px solid#2ecc71;
+
+}
+
+.Fibraoptica select:disabled{
+    background: #0e1a13;
+    outline: none;
+    border: 2px solid #0c130f;
+}
+
+.Fibraoptica select:hover,:focus{
+    background: #2c814f;
+    outline: none;
+    border: 2px solid #2ecc71;
+}
+
+.Fibraoptica select option{
+    background: #191919;;
+    border: 2px  solid #2ecc71;
+}
+
+.Fibraoptica select option{
+    list-style: none;
+    background: #191919;
+    padding: 5px 0;
+    margin: 0;
+    border-radius: 4px;
+    z-index: 1;
+    width: 96%;
+}
