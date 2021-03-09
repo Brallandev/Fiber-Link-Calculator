@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Calculadora con Javascript</title>
+        <link rel="stylesheet" href="style.css">
+        <script text="text/javascript"; src="Valores.js"> </script>
+    </head>
+    <body>
+
+        <div class="box" action="" id="form">
+
+            <div class="Inner_Box">
+
+                <h1>Calculadora de Conversiones</h1>
+
+                <input type="number" id="Entrada">
+
+                
+                <form name="tabla">
+
+                    <select name="identidad" id="identidad" onchange="BrallanesunrealG();">
+                    
+                        <option>Seleccione</option>
+                        <option value="1"> Potencia </option>
+                        <option value="2"> Voltaje </option>
+                    
+                    </select><br><br>
+
+                    <select name="operaciones" id="operaciones" disabled="" onchange="Formula(); Imagenes();">
+                        
+                        <option>Potencia</option>
+                        <option value="1" > dB a #veces </option>
+                        <option value="2"> #veces a dB </option>
+                        <option value="3"> dBm a Watts</option>
+                        <option value="4"> Watts a dBm</option>
+                        <option value="5"> dBw a Watts</option>
+                        <option value="6"> Watts a dBw</option>
+                        
+                    </select>
+
+                    <select name="operaciones2" id="operaciones2" disabled="" onchange="Formula2(); Imagenes2();">
+                        
+                        <option value="0">Voltaje</option>
+                        <option value="1" > dB a #veces </option>
+                        <option value="2"> #veces a dB </option>
+                        <option value="3"> dBmV a Voltios</option>
+                        <option value="4"> Voltios a dBmV</option>
+                        <option value="5"> dBuV a Voltios</option>
+                        <option value="6"> Voltios a dBuV</option>
+                        
+                    </select>
+
+                    <button type="button" onclick="getData(); Resultadoo();">Convert</button><br>
+
+                    <input type="number" id="resultado"><br>
+
+                    <img id="foto">
+
+                </form>
+                
+            </div>
+        </div>
+
+
+        <script text="text/javascript"; src="Calculadorasistemas.js"></script>
+
+        <div class="boxi" id="formi">
+
+            <div class="titulo">
+                <h3>Calculador de Sistemas</h3><br><br><br>
+                <h4>Amplificador y Atenuador</h4>
+            </div><br>
+
+            <form class="Primeralinea">
+                <select name="AA" id="AA">
+                        
+                    <option>Seleccione</option>
+                    <option value="1"> Amplificador </option>
+                    <option value="2"> Atenuador </option>
+                    
+                </select>
+                    
+                <input type="number" id="Entradatenuador">
+
+                <select name="vecesAA" id="vecesAA">
+                
+                    <option>Seleccione</option>
+                    <option value="1"> dB </option>
+                    <option value="2"> Veces </option>
+                    
+                </select>
+
+                <button type="button" onclick="amat();funcionapls()" >Sumar</button><br>
+
+            </form><br>
+
+            <div class="titulo2">
+                <h5>#Potencia de Entrada</h5>
+            </div>
+
+            <form class="Segundalinea">
+                <input type="number" id="entradapotencia">
+                <select name="vecesPP" id="vecesPP">
+                    
+                    <option>Seleccione</option>
+                    <option value="1"> dBm </option>
+                    <option value="2"> watts </option>
+                    
+                </select>
+
+                <button type="button" onclick="Pp(); Potenciaroja(); Sumatoriafinal();">Convert</button><br>
+
+            </form>
+
+            <form class="Terceralinea">
+
+                <img src="esquema.png">
+
+                <input type="number" id="entradapotenciaesq">
+                <input type="number" id="ganancia">
+                <input type="number" id="perdida">
+                <input type="number" id="potenciafinal">
+
+            </form>
+        </div>
+
+
+        <div class="boxe" id="forme">
+
+            <script text="text/javascript"; src="Fibraoptica.js"></script>
+
+            <div class="titulo3">
+                <g9>Calculadora de enlaces fibra optica</g9>
+            </div>
+
+            <form class="Fibraoptica" action="">
+                <x1>Salida</x1>
+                <input type="number" id="Salidafb">
+                <x2>Longitud</x2>
+                <input type="number" id="longitudfb" onchange="detector();">
+                <x7>Carrete</x7>
+                <input type="number" id="Carrete">
+
+                <select name="Onda" id="Ondax">
+                    
+                    <option>Onda</option>
+                    <option value="1310"> 1310 </option>
+                    <option value="1550"> 1550 </option>
+                    
+                </select>
+                
+                <x3>Fusiones</x3>
+                <input type="number" id="Fusiones">
+                <x4>Conectores</x4>
+                <input type="number" id="Conectores">
+                <x5>Perdida x Cable</x5>
+                <input type="number" id="Perdida">
+                <x6>Resultado</x6>
+                <input type="number" id="Resultadoo">
+                
+                <button type="button" id="conversion" onclick="Xvalor();">Convert</button>Convert</button>
+                
+            </form>
+        </div>
+    </body>
+</html>
