@@ -33,7 +33,7 @@ var funcionapls =function(){
         }
         if (Valordeentrada == 2){
             var dividido = Math.log10(Convertido);
-            resultado=(20*dividido);
+            resultado=(dividido);
             Conversion_AA = resultado;
             Ganancia= Ganancia + Conversion_AA;
         }
@@ -50,7 +50,7 @@ var funcionapls =function(){
         }
         if (Valordeentrada == 2){
             var dividido = Math.log10(Convertido);
-            resultado=(20*dividido);
+            resultado=(dividido);
             Conversion_AA = resultado;
             Perdida = Perdida + Conversion_AA;
         }
